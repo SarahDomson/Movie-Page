@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>King Of Boys</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
+      <h1>King Of Boys</h1>
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/King_of_Boys_poster.jpeg" alt="king of boys" width="700" height="400">
+    
+      <h2>Name Of Movie Directors</h2>
+      <ol type="A">
+        <li>Kemi Adetiba</li>
+      </ol>
+
+      <h3>Name Of Top 5 Actors</h3>
+      <ol type ="A">
+       <li>Sola Sobowale</li>
+       <li>Adesua Etomi</li>
+       <li>Titi Kuti</li>
+       <li>Reminisce</li>
+       <li>Akin Lewis</li>
+      </ol>
+        <b>Date Of Release</b>
+      <p>The movie was released on October 20 2018</p>
+
+        <h4>Movie Description</h4>
+      <p>King of Boys tells the story of Alhaja Eniola Salami (played by Sola Sobowale), a businesswoman and philanthropist with a promising political future. She is drawn into a struggle for power, which in turn threatens everything around her as a result of her growing political ambitions. To come out of this on top, she is caught up in a game of trust, not knowing whom she really has to look up to, and this leads to her ruthlessness.</p> 
+
+      <h4>Movie Booking Form</h4>
+      <form action="reservation.php" method="POST">
+        <label for="fname">Full Name</label>
+        <input type="fname" id="fname" name="fname" placeholder="fname" required><br><br>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="email" required><br><br>
+
+        <label for="date">Phone Number</label>
+        <input type="phone number" id="phone number" name="number" placeholder="enter phone number" required><br><br>
+         
+        <label for="date">Date<label>
+        <input type="date" id="date" name="date" placeholder="date" required><br><br>
+
+        <label for="number">Total Number</label>
+        <input type="number" id="number" name="number" placeholder="2" min="50" required><br><br>
+
+        <label for="popcorn/drink">Select Preference</label>
+        <input type="popcorn/drinks" id="popcorn/drinks" name="popcorn/drinks" required>
+        <select id="yes/no" name="yes/no" required>
+          <option value="">Select One></option>
+
+          <label for="hearaboutus">How Did You Hear About Us</label>
+          <select id="hearaboutus" name="socialmedia" required>
+            <option value="Twitter">Twitter</option>  
+            <option value="Instagram">>Instagram</option> 
+            <option value="Online Ads">Online Ads</option>
+            <option value="Google">Google</option>
+            <option value="Word Of Mouth">Word of Mouth</option>
+
+      </form>
   </body>
 </html>
